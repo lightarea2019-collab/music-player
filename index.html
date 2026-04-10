@@ -1,2 +1,44 @@
-<div id="xf-MusicPlayer" data-cdnName="https://lz.qaiu.top/parser?url=https://wwbso.lanzoup.com/iC93E3mvok5g&pwd=40ir"></div>
-<script src="https://player.xfyun.club/js/xf-MusicPlayer/js/xf-MusicPlayer.min.js"></script>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的音乐列表</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<style>
+body{margin:0;background:#f5f5f5;padding:20px;}
+</style>
+</head>
+<body>
+<div id="aplayer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    listFolded: false,
+    loop: 'all',
+    audio: [
+        {
+            name: "歌曲 1",
+            artist: "歌手",
+            url: "https://raw.githubusercontent.com/用户名/仓库名/main/song1.mp3",
+            cover: "https://picsum.photos/300/300"
+        },
+        {
+            name: "歌曲 2",
+            artist: "歌手",
+            url: "https://raw.githubusercontent.com/用户名/仓库名/main/song2.mp3",
+            cover: "https://picsum.photos/300/300"
+        },
+        {
+            name: "歌曲 3",
+            artist: "歌手",
+            url: "https://raw.githubusercontent.com/用户名/仓库名/main/song3.mp3",
+            cover: "https://picsum.photos/300/300"
+        }
+    ]
+});
+</script>
+</body>
+</html>
